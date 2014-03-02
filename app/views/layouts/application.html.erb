@@ -11,15 +11,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AppFinder</title>
   <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="assets/mosaic.css">
-    <link rel="stylesheet" href="assets/tinybox.css">
-    <link rel="stylesheet" href="assets/chosen.css" />
-    <link rel="stylesheet" href="assets/jquery-ui-min.css" />    
-    <link rel="stylesheet" href="assets/application.css">
-    <link rel="stylesheet" href="assets/responsiveSlides.css">
-    <link rel="stylesheet" href="assets/flexSlider.css">
-    <script src="http://www.youtube.com/iframe_api" type="text/javascript"></script>
+  <link rel="stylesheet" href="assets/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="assets/mosaic.css">
+  <link rel="stylesheet" href="assets/tinybox.css">
+  <link rel="stylesheet" href="assets/chosen.css" />
+  <link rel="stylesheet" href="assets/jquery-ui-min.css" />
+  <link rel="stylesheet" href="assets/application.css">
+  <link rel="stylesheet" href="assets/responsiveSlides.css">
+  <link rel="stylesheet" href="assets/flexSlider.css">
+  <script src="http://www.youtube.com/iframe_api" type="text/javascript"></script>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
@@ -27,7 +27,7 @@
 <body>
 <header class="navbar navbar-fixed-top">
         	<div id="site-header-inner" class="navbar-inner">
-	        	<div class="container">      
+	        	<div class="container">
 		        	<div id="logo" class="brand">
 		        		<img src="/assets/img/logo.png" alt="Tappollo" >
 		        	</div><!--/#logo -->
@@ -44,13 +44,13 @@
 		        			</a>
 		        		</li><!--/li -->
 	        		</ul><!--/#main-nav -->
-	        		
+
 					<form id="main-search" class="navbar-search pull-right">
 						<i class="icon-search"></i>
 					  <input type="text" id="main-search-query" class="search-query" placeholder="Search">
 					</form><!--/#main-search -->
-						
-						
+
+
 	        		<ul id="profile" class="nav pull-right">
 		        		<li class="profile-item">
 		        			<a href="#register">
@@ -64,23 +64,23 @@
 		        		</li><!--/li -->
 	        		</ul><!--/#profile -->
 
-	        	
+
 	        	</div><!--/.container -->
-	        	
+
         	</div><!--/.navbar-inner -->
         </header><!--/header -->
-        
+
         <div id="stage" class = "clearfix" >
         	<!--  login view -->
         	<div id="login-view" class="stage-view">
         	</div>
-        	
+
         	<div id="developers-view" class="stage-view">
         	</div>
-        	
+
         	<!-- register view -->
         	<div id="register-view" class="stage-view"> </div>
-        	
+
         	<div id="detail-view" class="stage-view">
         		<div class="pageLoading"></div>
         	</div>
@@ -92,13 +92,13 @@
                 <p>&copy; Company 2012</p>
         </footer>
 		<div id="loadingContainer"></div>
-        
+
 <script type="text/javascript">
   $(function() {
 	window.router = new AppFinder.Routers.WaterfallAppsRouter();
-	window.router.start();    
+	window.router.start();
   });
-  
+
 	$(document).on("click", "a[href^='/']", function(event) {
 	  if (!event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey) {
 	    event.preventDefault();
