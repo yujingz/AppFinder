@@ -3,7 +3,7 @@ ruby '2.1.1'
 
 gem 'rails', '3.2.9'
 
-gem "pg"
+gem "sqlite3"
 gem 'rails-backbone'
 gem 'coffee-script'
 
